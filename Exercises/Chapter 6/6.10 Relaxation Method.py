@@ -29,7 +29,7 @@ def relaxation(consts, accuracy):
 
     plt.plot(cpoints, fx)
     plt.xlabel('c, free parameter')
-    plt.ylabel('x')
+    plt.ylabel('fx')
     plt.ylim(-0.1, 1.1)
     plt.title('Percolation Tranisition')
     plt.savefig('Exercises/Chapter 6/6.8 percolation_transition.png', format='png')
