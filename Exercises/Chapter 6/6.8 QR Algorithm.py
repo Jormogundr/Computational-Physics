@@ -49,6 +49,7 @@ def findEigenValsVect(A):
     return np.diagonal(A)
     
 if __name__ == '__main__':
+    # Matrix must be square and symmetric about the diagonal.
     A = np.array([[1,4,8,4],
                 [4,2,3,7],
                 [8,3,6,9],
