@@ -1,5 +1,5 @@
 """
-This program showcases Newton's method - a numerical computation method to find the roots of a non-linear functiob.
+This program showcases Newton's method - a numerical computation method to find the roots of a non-linear function.
 
 In this case, the non-linear function is the sixth Legendre polynomial (over an interval from 0 to 1), which is a 6th degree polynomial. 
 
