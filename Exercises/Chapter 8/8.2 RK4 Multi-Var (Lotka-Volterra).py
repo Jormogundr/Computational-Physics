@@ -16,8 +16,8 @@ alpha, beta, gamma, delta = 1, 0.5, 0.5, 2
 
 # Rabbit (x) and fox (y) population growth. The rate of growth functions do not depend on t - only on the populations of their own and the other species.
 def f(r,t):
-    x = r[0] # initial condition x
-    y = r[1] # initial condition y
+    x = r[0]
+    y = r[1] 
     fx = (alpha*x) - (beta*x*y) # fx(x,y,t)
     fy = (gamma*x*y) - (delta*y) # fy(x,y,t)
     return array([fx,fy],float) # return a vector valued function <fx(x,y,t), fy(x,y,t)>
