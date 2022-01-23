@@ -19,11 +19,11 @@ def randomStep(pos):
     else: 
         j -= 1 # walk down
 
-    # If random step puts us out of lattice, turn that random step to the opposite direction.
+    # If random step puts us out o  `f lattice, turn that random step to the opposite direction.
     if i == 0: i += 1
-    if i == L: i -= 1
+    if i == L - 1: i -= 1
     if j == 0: j += 1
-    if j == L: j -= 1
+    if j == L - 1: j -= 1
 
     return [i,j] # new position
 
