@@ -2,7 +2,7 @@
 Monte Carlo integration is best suited for finding the area under the curve of pathological functions. It's accuracy increases at a slower rate with increasing sample points N compared to other integration methods 
 (such as trapezoidal). The other scenario best suited for MC is high dimension integration, where the number of sample points rapidly grows N*10^n (where n is the dimension).
 
-This program 
+This program uses Monte Carlo integration to find the integral of an 10 dimensional sphere, with each degree of freedom constrained to unit length -1 to 1.
 """
 from random import choice
 

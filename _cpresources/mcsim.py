@@ -18,14 +18,14 @@ for k in range(steps):
     # Choose the particle and the move
     i = randrange(N)
     j = randrange(3)
-    if random()<0.5:
+    if random()<0.5: # move up quantum state
         dn = 1
         dE = (2*n[i,j]+1)*pi*pi/2
-    else:
+    else: # move down quantum state
         dn = -1
         dE = (-2*n[i,j]+1)*pi*pi/2
 
-    # Decide whether to accept the move
+    # Decide whether to accept the move. Note we can't drop down past the ground state i.e. when n[i,j] == 0, always reject move
     if n[i,j]>1 or dn==1:
         if random()<exp(-dE/T):
             n[i,j] += dn
