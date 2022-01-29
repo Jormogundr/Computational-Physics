@@ -1,3 +1,9 @@
+"""
+Monte Carlo integration is best suited for finding the area under the curve of pathological functions. It's accuracy increases at a slower rate with increasing sample points N compared to other integration methods 
+(such as trapezoidal). The other scenario best suited for MC is high dimension integration, where the number of sample points rapidly grows N*10^n (where n is the dimension).
+
+This program 
+"""
 from random import choice
 
 # Constants
@@ -22,7 +28,7 @@ def generateRndCoords():
     return coords
     
 def multiDimensionMonteCarlo():
-    N = int(1E6)
+    N = int(1E4)
     sum = 0
     for i in range(0, N):
         space = generateRndCoords()
